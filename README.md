@@ -3,3 +3,5 @@
 # alpine-ldid
 
 Utility image that allows signing of MacOS executables
+
+This is based upon https://github.com/jesec/ldid-static/blob/master/Dockerfile
