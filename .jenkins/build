@@ -25,7 +25,7 @@ pipeline {
           }
           steps {
             script {
-              buildAndPushImage(REGISTRY, REGISTRY_CREDENTIAL, "internal/edge-ldid-x64")
+              buildAndPushImage(REGISTRY, REGISTRY_CREDENTIAL, "internal/alpine-ldid-x64")
             }
           }
         }
@@ -35,7 +35,7 @@ pipeline {
           }
           steps {
             script {
-              buildAndPushImage(REGISTRY, REGISTRY_CREDENTIAL, "internal/edge-ldid-arm64")
+              buildAndPushImage(REGISTRY, REGISTRY_CREDENTIAL, "internal/alpine-ldid-arm64")
             }
           }
         }
