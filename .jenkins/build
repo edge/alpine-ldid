@@ -12,6 +12,9 @@ def buildAndPushImage(registry, registryCredential, tag) {
 }
 
 pipeline {
+  agent {
+    label 'local'
+  }
   stages {
     stage('Build') {
       failFast true
